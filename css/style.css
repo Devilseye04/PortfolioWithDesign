@@ -1,0 +1,182 @@
+body,html{
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: #9609c0;
+    background: -moz-linear-gradient(45deg, #9609c0 0%, #ad1283 50%, #321c9f 100%);
+    background: -webkit-linear-gradient(45deg, #9609c0 0%,#ad1283 50%,#321c9f 100%);
+    background: linear-gradient(45deg, #9609c0 0%,#ad1283 50%,#321c9f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9609c0', endColorstr='#321c9f',GradientType=1 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+aside{
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em
+}
+
+#svg{
+    width: 40px;
+}
+
+figure{
+    margin: 0;
+}
+
+#avatar{
+    display: none;
+}
+
+figcaption{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+nav{
+    background:#fff ;
+}
+
+.active{
+    position: absolute;
+    display: block;
+    background: #fff;
+    width: 50%;
+    left: 0;
+    top:0;
+    height: 100%;
+}
+
+ul{
+    display: none;
+    list-style-type: none;
+    color: #000;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    padding-top: 2em;
+    
+}
+
+ul li a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+    padding: 1.5em 3em;
+    background-color: rgba(255, 255, 255, .35);
+    
+}
+
+main{
+    background: #fff;
+    padding: 1em 1.4em;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.cta{
+    display: block;
+    color: #fff;
+    background: #0072E4;
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 2em 0;
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;
+    }
+
+    #svg{
+        display: none;
+    }
+
+    aside{
+        background: #C4D4F3;
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
+
+    main{
+        padding: 4em;
+        background: white url(../img/Path\ 1.svg) no-repeat bottom right;
+        background-size: 70%;
+    }
+
+    #avatar{
+        display: block;
+        border-radius: 50%;
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        margin: 2em auto 1em auto;
+    }
+
+    #avatar img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    figcaption{
+        text-align: center;
+        color: #000;
+    }
+
+    ul{
+        display: block;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100 !important
+    }
+
+    ul li a{
+        color: #000;
+    }
+
+    ul li a:hover{
+        background-color: #fff ;
+    }
+
+    nav{
+        background:none ;
+    }
+
+    .cta{
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    h1{
+        font-size: 3em;
+        margin-top: 2em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+}
